@@ -149,15 +149,16 @@ Array<T> & Array<T>:: operator =(const Array & rhs)
 template <typename T>
 T & Array<T>::operator [ ](int index)
 {
-	/*if (m_start_index < index, index > (m_start_index + m_length - 1))
-	{
-	*/	return m_array[index];
-	//}
 
-	/*else 
+	if (m_start_index < index, index >(m_start_index + m_length - 1))
 	{
-		Exception a;
-		a.setMessage("Out Of Bounds");
-		a.getMessage();
-	}*/
+		return m_array[index];
+	}
+
+	else
+	{
+		//try
+			throw Exception("Out of Bounds");
+	
+	}
 }

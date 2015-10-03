@@ -19,7 +19,7 @@ Exception::Exception()
 
 Exception::~Exception()
 {
-	delete [] m_msg;
+	//delete [] m_msg;
 }
 
 Exception::Exception(char *msg)
