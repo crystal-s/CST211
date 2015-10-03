@@ -1,0 +1,13 @@
+What are the considerations you had to include in your operator= function
+Make sure there is enough space for all of the characters in the string. Make sure it returns a *this pointer.
+
+What is the similarity and difference between copy constructor and operator= functions
+Copy constructor does not return anything. operator= returns a *this pointer. Otherwise, they are the same. Copy constructor makes a new object. Operator= is not envoked unless the object is empty, otherwise it will use the copy constructor.
+
+What steps did you take to ensure no memory leaks?
+-Destructors
+
+In terms of big O how long would it take to find an element of this array? How could this be improved? What would the expression become?
+
+O(n)
+It could use a binary tree and then it would become O(log n)
