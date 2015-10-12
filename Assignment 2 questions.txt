@@ -1,0 +1,8 @@
+What considerations would have to be taken to add a columns class? What would be the advantage?
+- The Array2D class would have to be remodeled as would the Row class. The row class would take information from the Column class which would get information from the Array 2D class. It would allow for more flexability and reusability. 
+
+What is forward declaration and how is it used? Why does it work?
+-Forward declaration is when you don't #include a classfile, but add its class declaration to the top of another class's file. It allows multiple files to use information from one another without causing multiple include issues. 
+
+What would the code look like to rotate a 2d array by 90 degrees. What would be the big-O notation for this operation?
+-The row and column would be switched in the for() loop as well as the bounds. The big-O notation would be O(n^2).
